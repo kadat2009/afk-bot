@@ -4,9 +4,9 @@ function createBot() {
   const bot = mineflayer.createBot({
     host: 'sinhtonminecraft100.aternos.me',
     port: 27720,
-    username: 'AFK_Bot',
+    username: 'KaDatMC',
     auth: 'offline',
-    version: '1.21.11'
+    version: '1.21.1'
   })
 
   bot.on('login', () => console.log('Bot logged in'))
@@ -29,7 +29,7 @@ function createBot() {
   }, 30000)
 
   bot.on('end', () => {
-    console.log('Disconnected → reconnect')
+    console.log('Disconnected → reconnecting...')
     setTimeout(createBot, 10000)
   })
 }
