@@ -6,7 +6,7 @@ function createBot() {
     port: 27720,
     username: 'AFK_Bot',
     auth: 'offline',
-    version: '1.21.1' // 🔥 QUAN TRỌNG
+    version: '1.21.11'
   })
 
   bot.on('login', () => console.log('Bot logged in'))
